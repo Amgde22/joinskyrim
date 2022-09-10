@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./breakpoints.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+  <title>login Forum</title>
+  <link rel="stylesheet" href="./style.scss">
+</head>
+<body>
+<div class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-lg">
+    <a href="#" class="navbar-brand">The Elder Scrolls V: <span>SKYRIM</span></a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="nav">
+
+      <ul class="navbar-nav" >
+        <li class="navbar-item"><a href="#" class="nav-link active">Home</a></li>
+        <li class="navbar-item"><a href="#" class="nav-link disabled">Quests</a></li>
+        <li class="navbar-item"><a href="#" class="nav-link disabled">Spells</a></li>
+        <li class="navbar-item"><a href="#" class="nav-link disabled">Weapons</a></li>
+        <li class="navbar-item"><a href="#" class="nav-link disabled">Armor</a></li>
+        <li class="navbar-item"><a href="#" class="nav-link disabled">Moreawesome skyrim pic</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div id="main-page" class="container-xxl center-image">
+
+  <div class="row ">
+    <!-- window -->
+    <div class="col-sm bg-transparent border-0 p-0 d-none d-sm-block  box "></div>
+
+    <!-- forum -->
+    <div class="col bg-transparent border-0 p-0 box forumbox">
+
+      <div class=" scroll w-100 h2 border border-3 border-light border-bottom-0  rounded-4  overflow-hidden">
+          <button class="w-100 h-100 h-2  border-0 bg-black" 
+          data-bs-toggle="collapse" data-bs-target="#collapse-forum">&nbsp;</button>
+      </div>
+
+      <div class="collapse container show forumbox "  id="collapse-forum">
+      <div class="forum-container shadow-lg  w-75 m-auto  p-2  " >
+         <h4> <small> you <STRong>KNOW</STRong> you want to be a dragonborn </small> <a href="#register-forum" class="link-secondary"  data-bs-toggle="modal" data-bs-target="#modal">Apply now</a></h4>
+
+
+
+
+
+
+         
+
+            <div id="game-features-carousel" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#game-features-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#game-features-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#game-features-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#game-features-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+              </div>
+              <div class="carousel-inner">
+
+                <div class="carousel-item game-feature active">
+
+                    <img src="./graphics/landscape.jpg" class="d-blaco w-100 card-img-top" alt="awesome skyrim pic">
+                    <div class="card-body ">
+                      <h5 class="card-title">Beautiful</h5>
+                      <h6 class="card-text">landscape</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item game-feature">
+                    <img src="./graphics/hard.jpg" class="d-blaco w-100 h-100 card-img-top" alt="awesome skyrim pic">
+                    <div class="card-body ">
+                      <h5 class="card-title">Formidable</h5>
+                      <h6 class="card-text">foes</h6>
+                    </div>
+
+
+                </div>
+
+                <div class="carousel-item game-feature">
+                    <img src="./graphics/magic.gif" class="d-blaco h-75 w-100 card-img-top" alt="awesome skyrim pic">
+                    <div class="card-body ">
+                      <h5 class="card-title">Many</h5>
+                      <h6 class="card-text">more surprises </h6>
+                    </div>   
+                </div>
+
+                <div class="carousel-item game-feature">
+                  <img src="./graphics/staby.jpg" class="d-blaco h-75 w-100 card-img-top" alt="awesome skyrim pic">
+                  <div class="card-body ">
+                    <h5 class="card-title">Stab</h5>
+                    <h6 class="card-text">kids ? </h6>
+                  </div>   
+              </div>
+
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#game-features-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#game-features-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+            
+            <button class="btn btn-secondary" id="applyBtn" data-bs-toggle="modal" data-bs-target="#modal" >Apply</button>
+          </div>
+
+         
+
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="modal fade in" id="modal">
+  <div class="modal-dialog modal-dialog-centered" id="show" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>many adventures await you</h4>
+        <div class="btn-close bg-danger" data-bs-dismiss="modal" data-bs-target="#modal"></div>
+      </div>
+      <div class="modal-body p-0">
+
+        <form action="#" class="container" >
+
+          <div class="input-group gap-1 mx-auto">
+            <input type="text" class="form-control-sm" placeholder="Adventure Name" required>
+          </div>
+
+          <div class="my-3"></div>
+
+            <label for="starting-area" class="form-label-sm">Select a strating area :</label>
+            <select name="" id="starting-area" class="form-select-sm p-2 mx-2">
+              <optgroup label="Strating Area">
+              <option value="no one cares" >Helgen</option>
+              <option value="no one cares">Whiterun</option>
+              <option value="no one cares">Winter Hold</option>
+              <option value="no one cares">Solitude</option>
+            </select>
+
+            <div class="my-3"></div>
+
+
+          <div class="form-floating input-group " id="email-holder">
+            <input type="email" class="form-control border-1 border-secondary" placeholder="Enter Email bi" id="email" pattern="[0-9A-Za-z]+@[0-9A-Za-z]+\.[0-9A-Za-z]{2,}$" required>
+            <label for="email" class="col-form-label-sm">Email</label>
+            <input type="text" class="form-control-sm" id="email-stopper">
+          </div>
+          <div class="my-3"></div>
+
+          <div class="input-group gap-1 d-flex justify-content-start  ">
+              <input type="password" class="form-control-sm" id="password" placeholder="Password" required minlength="8">
+          </div>
+          <div class="my-3"></div>
+          <div class="modal-footer d-flex justify-content-end g-2">
+            <button class="btn btn-outline-danger">Leave</button>
+            <button class="btn btn-secondary btn-md  "> Join Now</button>
+          </div>
+
+       </form>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

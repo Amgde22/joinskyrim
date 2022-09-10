@@ -1,0 +1,29 @@
+
+.scroll{
+  position: relative;
+  background-color: black !important;
+  box-shadow: 0 25px 15px -20px rgb(22, 22, 22);
+}
+
+.forumbox{
+  transform: translateY(-10px);
+}
+.forum-container{
+  background-color: white;
+}
+#register-forum{
+  font-family: Arial, Helvetica, sans-serif;
+}
+  #email{
+    min-width: 207px;
+    max-width: 360px;
+  }
+  #email-stopper{
+    min-width: 0 ;padding: 0; opacity: 0;
+    width: calc(100vw - 400px);
+    max-width: 20px;
+  }
+
+  form:has(div){
+    background-color: red;
+  }

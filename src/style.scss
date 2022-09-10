@@ -1,0 +1,122 @@
+@use "scss/forumbox.scss" ;
+
+@font-face {
+  font-family: Planewalker;
+  src: url("./fonts/Planewalker.otf") format("opentype");
+}
+@font-face {
+  font-family: Friz;
+  src: url(./fonts/friz.woff) ;
+}
+
+:root{
+  --main-clr:#c83f49;
+  --main-clr-dark:#ad1e28;
+  --main-clr-light:#e6565f;
+
+  --navbar-height:70px;
+}
+
+
+body{
+
+ overflow: scroll;
+ background-color: var(--main-clr-light);
+ font-family:Friz, Arial, Helvetica, sans-serif;
+ font-size: 16px;
+}
+
+.navbar{
+  color: white;
+
+  & .navbar-brand{
+    margin-right: auto;
+    font-family:  Planewalker,Arial, Helvetica, sans-serif ;
+    & span{
+      font-family: Friz, Arial, Helvetica, sans-serif ;
+    }
+  }
+  & .navbar-nav{
+    margin: auto;
+  }
+}
+
+    .disabled{
+      position: relative !important;
+
+      &::after{
+        content: "💡 Sign up to find more!";display: block;
+        position: absolute; top: 110%;
+        padding: .4em 1.2em;
+        width: max-content;
+        border-radius: 25px;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        
+        font-family: inherit;
+        transition: transform 250ms ease-in;
+        transform: translateX(-25%) scale(0) ;
+      }
+      &:hover::after , &:focus::after{
+        transform: translateX(-25%) scale(1);
+
+        }
+    }
+
+#main-page{
+  min-height: 100vh;
+  background-image: url("./graphics/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+#game-features-carousel{
+  height: 270px;
+  padding-top: 18px;
+  background-color: rgb(49, 49, 49);
+}
+.game-feature{
+  position: relative;
+  height: 200px;
+}
+
+  .card-img-top{
+    display: block;
+
+    object-fit: cover;
+  }
+
+  .card-body{
+    color: white;
+    position: absolute;bottom: 0;left: 0;right: 0;
+    padding-left: 24px;
+    background-color: none ;
+    background-image: linear-gradient(to top , black , rgba(0, 0, 0, 0.795),transparent 100%  );
+  }
+
+img{
+  max-width: 100%;
+}
+#applyBtn{
+  display: block;
+ margin-left: auto;
+ margin-top: 12px;
+ margin-right: 8px;
+}
+
+// .box{
+
+//   background-color: royalblue;
+//   border: 3px solid white;
+//   height: 500px;
+
+
+//   min-height: 70px;
+//   text-align: right;
+  
+// }
+// .box:nth-last-of-type(2){
+//   background-color: red;
+//   max-height: 100px;
+// }
+
